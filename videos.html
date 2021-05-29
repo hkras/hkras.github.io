@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="videos-style.css">
+    <title>HK Videos</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="banner">
+      <div class="home"><!--<a href="index.html"><img src="images/home.png" alt="home"></a>--><h1 class="title"><a href="index.html">HANNA KRAS</a></h1></div>
+    </div>
+    <nav class="main-nav">
+      <p><a href="resume.html">RESUME</a>
+      <a href="about.html">ABOUT</a>
+      <a class="current" href="videos.html">VIDEOS</a></p>
+    </nav>
+    <!-- Header End -->
+  <!--      <h3>Friends of Guest House Fundraiser</h3>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XTLWkNVha-w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p><a href="https://friendsofguesthouse.org/">Friends of Guest House</a> is a non-profit working to help women successfully reenter the community from incarceration. This video was produced as a supplementary asset to showcase during the fundraising event: <em>A Night of Transformation Fundraising Gala.</em><p>
+-->
+
+          <!-- Slideshow container -->
+          <div class="slideshow-container">
+
+            <!-- Full-width videos -->
+            <div class="mySlides fade">
+              <iframe class="responsive-iframe" width="640" height="360" src="https://www.youtube.com/embed/c4Kbjlqsdz8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <p>Produced and shot a virtual open house highlighting the history and unique architectural features of the Turner Farmhouse, a resident-curator-occupied property. The Park Authority’s <a href="https://www.fairfaxcounty.gov/parks/resident-curator-program">Resident Curator Program</a> requires reasonable public access to these historic properties, which occurs in the form of an annual open house.</p>
+            </div>
+
+            <div class="mySlides fade">
+              <iframe class="responsive-iframe" width="640" height="360" src="https://www.youtube.com/embed/4qyJio7P4kg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <p>Produced and shot a virtual open house highlighting the history and unique architectural features of the Hannah P. Clark/Enyedi House, a resident-curator-occupied property. The Park Authority’s <a href="https://www.fairfaxcounty.gov/parks/resident-curator-program">Resident Curator Program</a> requires reasonable public access to these historic properties, which occurs in the form of an annual open house.</p>
+            </div>
+
+            <div class="mySlides fade">
+              <iframe class="responsive-iframe" width="640" height="360" src="https://www.youtube.com/embed/38PXi_rEm8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <p>Edited as a short promo for the annual Fairfax County Park Authority <a href="https://www.fairfaxcounty.gov/parks/healthy-strides/10k5k">Healthy Strides 5k/10k</a>.</p>
+            </div>
+
+            <div class="mySlides fade">
+              <iframe class="responsive-iframe" src="https://player.vimeo.com/video/147392337" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+              <p><em>Monica</em> is a bilingual short film shot and produced in Poland in a week after receiving a call for submissions to the <a href="http://www.horizonaward.org/">Horizon Award</a>&mdash;an award dedicated to supporting the next generation of female filmmakers.</p>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="iframe-container">
+                <iframe class="responsive-iframe" width="640" height="360" src="https://www.youtube-nocookie.com/embed/XTLWkNVha-w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <p><a href="https://friendsofguesthouse.org/">Friends of Guest House</a> is a non-profit working to help women successfully reenter the community from incarceration. This video was produced as a supplementary asset to showcase during the fundraising event: <em>A Night of Transformation Fundraising Gala.</em></p>
+            </div>
+
+            <div class="mySlides fade">
+              <iframe class="responsive-iframe" width="640" height="360" src="https://www.youtube-nocookie.com/embed/x9VOYXqi-Ws" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <p>Dating back to at least the 1920s, Nokesville Day is a celebration and festival supporting the tiny village of Nokesville. The event attracts around 4,000 people every year to watch the parade floats and join in the fun. This coverage was for <a href="http://bristowbeat.com/"><em>Bristow Beat</em></a>, a local newspaper.</p>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+
+  <!-- dots at bottom -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+          </div>
+
+  <!-- Javascript -->
+          <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+          }
+          </script>
+  </body>
+</html>

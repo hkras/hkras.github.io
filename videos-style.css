@@ -1,0 +1,187 @@
+html {
+  font-size: 16px;
+  font-family: Verdana, Helvetica, monospace;
+}
+h3 {
+  margin: 5px;
+  text-align: center;
+}
+h3+p {
+  margin-top: 0;
+}
+p {
+  line-height: 25px;
+  margin-left: 10px;
+}
+.home img {
+
+}
+.title {
+  color: #3c345c;
+  font-family: Verdana, Helvetica, monospace;
+  font-size: 80px;
+  text-align: center;
+  letter-spacing: 3px;
+  word-spacing: -5px;
+}
+.title a:link, a:visited {
+  color: #3c345c;
+  text-decoration: none;
+}
+.main-nav {
+  text-align: center;
+  letter-spacing: 2px;
+  word-spacing: 15px;
+  font-size: 20px;
+  line-height: 60%;
+}
+a:link, a:visited {
+  color: #3c345c;
+  text-decoration: none;
+}
+a:hover {
+  color: #b8aec8;
+  text-decoration: none;
+}
+a:active {
+  color: #b8aec8;
+  text-decoration: underline;
+}
+.main-nav .current {
+  color: #b8aec8;
+}
+/*.column {
+  float: left;
+  width: 33%;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  background-color: #b8aec8;
+  padding: 20px 30px 10px 30px;
+}*/
+
+
+
+/*slideshow/carousel stuff*/
+
+* {box-sizing:border-box}
+
+/* slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  background-color: #b8aec8;
+  padding: 20px 20px 5px 10px;
+  min-height: 500px;
+}
+
+iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* hide vids by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides p {
+  max-width: 1000px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mySlides a {
+  color: #d30cb8;
+}
+
+.mySlides a:hover {
+  color: #3c345c;
+}
+
+/* previous and next buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #d30cb8;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* put the "next button" on the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* put the "previous button" on the left */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* on hover, add a translucent black background color */
+.prev:hover, .next:hover {
+  background-color: rgba(60,52,92,0.8);
+}
+
+
+/* dot indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #3c345c;
+}
+
+/* fade animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .1}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .1}
+  to {opacity: 1}
+}
+
+@media screen and (max-width: 640px) {
+  .responsive-iframe {
+    width: 100%;
+    max-height: 249px;
+  }
+  .home {
+    display: block;
+  }
+  .home img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10%;
+  }
