@@ -5,7 +5,43 @@ html {
 html, body {
   overflow-x:hidden;
 }
-/*tooltips*/
+/* HEADER */
+#header {
+  background-color: #ffffff;
+  padding: 0;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  position: fixed; /* fixed position at the top of the page */
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.2s; /* transition effect on scroll */
+  display: block;
+  color: #3c345c;
+}
+#title {
+  color: #3c345c;
+}
+#notCurrent a {
+  color: #3c345c;
+}
+#notCurrent a:hover {
+  color: #b8aec8;
+}
+.home-title {
+  color: #3c345c;
+  font-family: Verdana, Helvetica, monospace;
+  font-size: 80px;
+  text-align: center;
+  letter-spacing: 3px;
+  word-spacing: -5px;
+}
+.home-title a:link, a:visited {
+  color: #3c345c;
+  text-decoration: none;
+}
+/* tooltips */
 .tooltip {
   position: relative;
   display: inline-block;
@@ -15,7 +51,7 @@ html, body {
   visibility: hidden;
   width: 240px;
   background-color: #3c345c;
-  color: #fff;
+  color: #ffffff;
   text-align: left;
   border-radius: 6px;
   padding: 5px 5px 5px 10px;
@@ -55,13 +91,13 @@ html, body {
 .header-wrapper {
   width: 100%;
   /*max-width: 1200px;*/
-  margin: 20px auto;
-  background-color: #fff;
+  /*margin: 20px auto;*/
+  background-color: #ffffff;
 }
 .title {
-  color: #3c345c;
+/*  color: #3c345c; */
   font-family: Verdana, Helvetica, monospace;
-  font-size: 80px;
+/*  font-size: 80px; */
   text-align: center;
   letter-spacing: 3px;
   word-spacing: -5px;
@@ -81,25 +117,31 @@ html, body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #333;
-  color: #fff;
+  color: #ffffff;
 }
 .feature-square {
   background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),url(images/videos.gif);
-  color: #fff;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
 }
 .rect-top {
   background-image: url(images/writings.png);
-  color: #fff;
+  color: #ffffff;
   background-position: center;
 }
 .rect-bottom {
-  background-image: url(images/designs.png);
-  color: #fff;
+  background-image: url(images/codings.png);
+  color: #ffffff;
   background-position: center;
 }
 .feature-square h3 {
+  margin-top: auto;
+}
+.rect-top h3 {
+  margin-top: auto;
+}
+.rect-bottom h3 {
   margin-top: auto;
 }
 @media (min-width: 500px) {
@@ -136,7 +178,7 @@ html, body {
   width: 80%;
   /*max-width: 1200px;*/
   margin: 20px auto;
-  background-color: #fff;
+  background-color: #ffffff;
   display: grid;
 }
 .imgHanna {
@@ -177,7 +219,17 @@ html, body {
 .up {
   transform: rotate(-135deg);
 }
-
+#strengths {
+  display: block;
+  margin: auto;
+  width: 50%;
+  background-color: #b8aec8;
+  padding: 15px 35px;
+  border-radius: 10px;
+}
+#strengths ul {
+  width: 95%;
+}
 #strengths a {
   color: #920075;
   text-decoration: none;
@@ -187,17 +239,50 @@ html, body {
   text-decoration: none;
   font-weight: bold;
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  .about {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .about-photo {
+    grid-column: 1;
+    grid-row: 1;
+    display: block;
+    margin: auto;
+  }
+  .about-copy {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  #strengths {
+    width: 80%;
+  }
+}
+@media (max-width: 499px) {
+  .about {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #strengths {
+    width: 80%;
+  }
+}
+/*@media (min-width: 768px) {
   .strengths-desktop {
     background-color: rgba(58, 153, 168, 0.8);
     text-align: left;
-    display: grid;
+    display: flex;
+    flex-direction: row;
     grid: repeat(3, max-content) / 20em auto 20em;
+  }
+  #strengths {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media (min-width: 500px) {
 
-}
+}*/
 /* End About page */
 /* About Timeline */
 /* timeline line */
@@ -253,6 +338,7 @@ html, body {
   word-spacing: 15px;
   font-size: 20px;
   line-height: 60%;
+  font-weight: bold;
 }
 .main-nav a:link, a:visited {
   color: #3c345c;
@@ -283,7 +369,7 @@ input[type=email] {
 }
 input[type=submit] {
   background-color: #3c345c;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 12px 30px;
   border: none;
   cursor: pointer;
