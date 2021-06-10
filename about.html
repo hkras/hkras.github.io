@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hanna Kras</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <div class="banner">
+    <h1 class="home-title"><a href="index.html">HANNA KRAS</a></h1>
+  </div>
+  <nav class="main-nav">
+    <p><a href="resume.html">RESUME</a>
+    <a class="current" href="about.html">ABOUT</a></p>
+  </nav>
+  <div class="about-wrapper">
+    <div class="about">
+      <div class="about-photo">
+        <img src="images/hanna-kras.jpg" alt="profile image of Hanna Kras" class="imgHanna">
+      </div>
+      <div class="about-copy">
+          <p>Hanna Kras is a writer, videographer, web manager, and overall communicator, with experience in public, private, and voluntary sectors.</p>
+          <p>In the wild west days of the internet, Hanna taught herself how to alter HTML and CSS to get the perfect color scheme and look and feel for her Xanga (RIP), then her MySpace. Later she got together with an online friend and created a website to host their StarCraft clan. She was just intuitively testing and retesting bits of code to see what would happen if she changed this or that. Years pass and she doesn’t develop this hobby further. Instead she follows her other passion for words with an English degree and a film & media studies minor. But throughout her communications career, she continues to tinker with SharePoint, WordPress, and eventually Drupal at the Park Authority, where she is acting Webmaster when needed and continues to serve as backup and support to web content management needs. This includes designing and creating webpages with HTML, CSS, and Javascript; creating and updating content; creating and sending marketing emails; developing web forms; and ensuring content is accessible and user friendly.
+          </p>
+          <p>Hanna decides coding is here to stay, so it was time she built her own website. Finally, a place to compile her videos, writings, and even codings. Join her on her journey of multipotentialism as she continues to create across the spectrum.</p>
+          <p>Current interests include:</p>
+          <ul>
+            <li>front-end web development</li>
+            <li>cinema</li>
+            <li>Gothic novels</li>
+            <li>Oxford commas</li>
+            <li>human memory</li>
+          </ul>
+      </div>
+    </div>
+  </div>
+<!--  <div class="timeline">
+    <h4 style="text-align: center; padding-top: 30px;">Coding Timeline</h4>
+    <div class="timeline-top">
+      <div class="timeline-content">
+      </div>
+    </div>
+    <div class="timeline-bottom">
+      <div class="timeline-content">
+      </div>
+    </div>
+  </div>-->
+<section class="strengths-desktop">
+<!--  <div class="strengthsnegative">BAMBA</div>   -->
+  <div id="strengths">
+    <div onclick="dropMultipotentialite(); rotateArrow();">
+      <h3 class="strengthsTitles">If you're into Multipotentiality or Specialism <i id="arrowOne" class="down"></i></h3>
+      <div class="preference" id="dropDownMulti" style="display: none;">
+        <div class="tooltip"><p>Hanna is a <span style="color: #920075;">multipotentialite</span><span class="definitions tooltiptext"><em>noun</em></br>an educational and psychological term referring to the ability and preference of a person, particularly one of strong intellectual or artistic curiosity, to excel in two or more different fields</span>.</p>
+        </div>
+        <p>Some of her skills include:</p>
+        <ul>
+          <li>Idea Synthesis: Combining two or more fields and creating something new at the intersection. Innovation happens at the intersections. Ability to access these points of intersection.</li>
+          <li>Rapid Learning: Less afraid of trying new things and stepping out of comfort zones. Many skills are transferable across disciplines. Bring everything learned to every new area being pursued. Rarely starting from scratch.</li>
+          <li><a href="https://www.fastcompany.com/90482018/adaptability-should-be-your-new-hires-top-soft-skill-heres-how-to-test-for-it" title="&#8220;adaptability may be the most important soft skill of all&#8221;">Adaptability</a>: The ability to morph into whatever you need to be in a given situation. Can take on various roles depending on business/client needs. Ability to pivot in a fast-changing economy and world in order to meet the needs of the market.</li>
+        </ul>
+      </div>
+    </div>
+    <div onclick="dropStrengths(); rotateArrowTwo();">
+      <h3 class="strengthsTitles">If you're into Clifton Strengths <i id="arrowTwo" class="down"></i></h3>
+      <div class="preference" id="dropStrengths" style="display: none;">
+        <p>Hanna's strengths are:</p>
+        <ul>
+          <li>Learner</li>
+          <li>Achiever</li>
+          <li>Competition</li>
+          <li>Empathy</li>
+          <li>Futuristic</li>
+        </ul>
+      </div>
+    </div>
+    <div onclick="dropTypes(); rotateArrowThree();">
+      <h3 class="strengthsTitles">If you're into Myers-Briggs Type Indicators <i id="arrowThree" class="down"></i></h3>
+      <div class="preference" id="dropTypes" style="display: none;">
+        <p>Hanna is an ENFJ:</p>
+        <ul>
+          <li>Extraversion</li>
+          <li>Intuition</li>
+          <li>Feeling</li>
+          <li>Judging</li>
+        </ul>
+      </div>
+    </div>
+    <div onclick="dropAstrology(); rotateArrowFour();">
+      <h3 class="strengthsTitles">If you're into Astrological Signs <i id="arrowFour" class="down"></i></h3>
+      <div class="preference" id="dropAstrology" style="display: none;">
+        <p>Hanna’s main astrological signs are:</p>
+        <ul>
+          <li>Sun Sign: Taurus</li>
+          <li>Moon Sign: Cancer</li>
+          <li>Rising Sign: Cancer</li>
+        </ul>
+      </div>
+    </div>
+    <div onclick="dropHouses(); rotateArrowFive();">
+      <h3 class="strengthsTitles">If you're into Hogwarts Houses <i id="arrowFive" class="down"></i></h3>
+      <div class="preference" id="dropHouses" style="display: none;">
+        <p>Hanna’s house is:</p>
+        <ul>
+          <li>Ravenclaw</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<!--    <div class="strengthsnegative">TACO</div>   -->
+</div>
+
+<!--script to make the strengths dropdown and show more text-->
+  <script>
+  function dropMultipotentialite() {
+    var x = document.getElementById("dropDownMulti");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  function rotateArrow() {
+    var arrow = document.getElementById("arrowOne");
+    if (arrow.className === "down") {
+      arrow.className = "up";
+    } else {
+      arrow.className = "down";
+    }
+  }
+  function dropStrengths() {
+    var x = document.getElementById("dropStrengths");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  function rotateArrowTwo() {
+    var arrow = document.getElementById("arrowTwo");
+    if (arrow.className === "down") {
+      arrow.className = "up";
+    } else {
+      arrow.className = "down";
+    }
+  }
+  function dropTypes() {
+    var x = document.getElementById("dropTypes");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  function rotateArrowThree() {
+    var arrow = document.getElementById("arrowThree");
+    if (arrow.className === "down") {
+      arrow.className = "up";
+    } else {
+      arrow.className = "down";
+    }
+  }
+  function dropAstrology() {
+    var x = document.getElementById("dropAstrology");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  function rotateArrowFour() {
+    var arrow = document.getElementById("arrowFour");
+    if (arrow.className === "down") {
+      arrow.className = "up";
+    } else {
+      arrow.className = "down";
+    }
+  }
+  function dropHouses() {
+    var x = document.getElementById("dropHouses");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  function rotateArrowFive() {
+    var arrow = document.getElementById("arrowFive");
+    if (arrow.className === "down") {
+      arrow.className = "up";
+    } else {
+      arrow.className = "down";
+    }
+  }
+/*
+  function rotateArrow() {
+    var img = document.getElementById('arrowOne');
+    img.className = 'up';
+  }
+*/
+
+
+  </script>
+
+</body>
+</html>
