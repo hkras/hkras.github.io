@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="temp-style.css">
+    <title>Unit Conversion</title>
+    <!-- this is JavaScript -->
+    <script type="text/javascript">
+      function CelsiusConversion(valNum) {
+        document.getElementById("outputCelsius").innerHTML=((valNum-32)*(5/9));
+      }
+      function FahrenheitConversion(valNum) {
+        document.getElementById("outputFahrenheit").innerHTML=((valNum*(9/5))+32);
+      }
+    </script>
+    <!-- this ends JavaScript -->
+  </head>
+  <body>
+    <header>
+      <h1>Unit Conversion</h1>
+      <h3>Easily Convert U.S. Customary Units to Metric Units</h3>
+      <p>Hello Americans! If you, like me, have a lot of family that don't reside in the U.S., then this is the site for you!</p>
+      <p>You ever wonder if 35 degrees is super hot or super cold or somewhere in the middle??</p>
+      <p>Me too! Let's find out!</p>
+    </header>
+    <div class="container">
+      <div class="column L">
+        <h4>Where in the world do they measure?</h4>
+        <div class="zoom">
+          <img id="map" src="images/measurement-systems-map.svg" data-zoom-image="/image/measurement-systems-map-sm.png" alt="a map showing which countries across the world use which types of measurement systems" width="100%">
+        </div>
+      </div>
+      <div class="column R">
+        <h4>Type in your units&#8212;it's that simple!</h4><br>
+        <form class="table" action="index.html" method="post">
+          <div class="column F">
+            <p><label for="fahrenheit">Fahrenheit: </label>
+            <input id="inputFeet" type="number" placeholder="Fahrenheit" oninput="CelsiusConversion(this.value)" onchange="CelsiusConversion(this.value)"></p>
+            <p>Celsius: <span id="outputCelsius"></span></p>
+          </div>
+          <div class="column C">
+            <p><label for="celsius">Celsius: </label>
+            <input id="inputFeet" type="number" placeholder="Celsius" oninput="FahrenheitConversion(this.value)" onchange="FahrenheitConversion(this.value)"></p>
+            <p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
