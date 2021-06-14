@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>HK Graphics</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="banner">
+      <div class="home"><h1 class="home-title"><a href="index.html">HANNA KRAS</a></h1></div>
+    </div>
+    <nav class="main-nav">
+      <p><a href="resume.html">RESUME</a>
+      <a href="about.html">ABOUT</a>
+      <a class="current" href="graphics.html">GRAPHICS</a></p>
+    </nav>
+    <!-- Header End -->
+    <!-- Flex Box Flex Box You're My Flex Box -->
+    <section class="graphics-flex">
+      <div class="graphics-item">
+        <img class="graphicsImage" src="/images/graphics/face-coverings.png" alt="COVID-19 Face Coverings Flyer" style="width:100%">
+        <div id="graphicsModal" class="graphics-modal">
+          <span class="exit-button">&times;</span>
+          <img class="graphics-modal-content" id="graphicsImg01">
+          <div id="graphicsCaption">
+          </div>
+        </div>
+      </div>
+      <div class="graphics-item">
+        <img class="graphicsImage" src="/images/graphics/fairfax-county-park-foundation.png" alt="Fairfax County Park Foundation Fundraising Infographic" style="width:100%">
+        <div id="graphicsModal" class="graphics-modal">
+          <span class="exit-button">&times;</span>
+          <img class="graphics-modal-content" id="graphicsImg02">
+          <div id="graphicsCaption">
+          </div>
+        </div>
+      </div>
+      <div class="graphics-item">
+        <img class="graphicsImage" src="/images/graphics/oak-hill.png" alt="Oak Hill Virtual Open House Instagram Story Post" style="width:100%">
+        <div id="graphicsModal" class="graphics-modal">
+          <span class="exit-button">&times;</span>
+          <img class="graphics-modal-content" id="graphicsImg03">
+          <div id="graphicsCaption">
+          </div>
+        </div>
+      </div>
+      <div class="graphics-item">
+        <img class="graphicsImage" src="/images/graphics/parkland-trails-fact-sheet.png" alt="Fairfax County Park Authority Parkland, Trails, Playgrounds & Athletic Fields Infographic" style="width:100%">
+        <div id="graphicsModal" class="graphics-modal">
+          <span class="exit-button">&times;</span>
+          <img class="graphics-modal-content" id="graphicsImg04">
+          <div id="graphicsCaption">
+          </div>
+        </div>
+      </div>
+      <div class="graphics-item">
+        <img class="graphicsImage" src="/images/graphics/training-new-marijuana-laws.png" alt="Agencywide Training on New Marijuana Laws Flyer" style="width:100%">
+        <div id="graphicsModal" class="graphics-modal">
+          <span class="exit-button">&times;</span>
+          <img class="graphics-modal-content" id="graphicsImg05">
+          <div id="graphicsCaption">
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <script type="text/javascript">
+        // Get the modal
+        var modal = document.getElementById("graphicsModal");
+        var i;
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementsByClassName("graphicsImage");
+        var modalImg = document.getElementById("graphicsImg01");
+        var captionText = document.getElementById("graphicsCaption");
+
+        for(i=0;i< img.length;i++)
+        {
+          img[i].onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+            }
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("exit-button")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+    </script>
+
+  </body>
+</html>
