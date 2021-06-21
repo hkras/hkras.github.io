@@ -129,12 +129,12 @@ html, body {
   flex-direction: column;
 }
 .rect-top {
-  background-image: url(images/writings.png);
+  background-image: url(images/writings-sm.png);
   color: #ffffff;
   background-position: center;
 }
 .rect-bottom {
-  background-image: url(images/codings.png);
+  background-image: url(images/codings-sm.png);
   color: #ffffff;
   background-position: center;
 }
