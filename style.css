@@ -219,8 +219,6 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 2%;
-/*  margin-bottom: 5%; */
 }
 @media (max-width: 800px) {
   .testimonial-container {
