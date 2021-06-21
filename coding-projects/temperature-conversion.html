@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="temp-conversion-style.css">
+    <link rel="stylesheet" href="temp-style.css">
     <title>Unit Conversion</title>
-    <!-- this is JavaScript -->
+    
+    
     <script type="text/javascript">
       function CelsiusConversion(valNum) {
         document.getElementById("outputCelsius").innerHTML=((valNum-32)*(5/9));
@@ -14,21 +15,19 @@
         document.getElementById("outputFahrenheit").innerHTML=((valNum*(9/5))+32);
       }
     </script>
-    <!-- this ends JavaScript -->
+
+    
   </head>
   <body>
     <header>
       <h1>Unit Conversion</h1>
       <h3>Easily Convert U.S. Customary Units to Metric Units</h3>
-      <p>Hello Americans! If you, like me, have a lot of family that don't reside in the U.S., then this is the site for you!</p>
-      <p>You ever wonder if 35 degrees is super hot or super cold or somewhere in the middle??</p>
-      <p>Me too! Let's find out!</p>
     </header>
     <div class="container">
       <div class="column L">
         <h4>Where in the world do they measure?</h4>
         <div class="zoom">
-          <img id="map" src="../images/measurement-systems-map.svg" data-zoom-image="/image/measurement-systems-map-sm.png" alt="a map showing which countries across the world use which types of measurement systems" width="100%">
+          <img id="map" src="/images/measurement-systems-map.svg" data-zoom-image="/image/measurement-systems-map-sm.png" alt="a map showing which countries across the world use which types of measurement systems" width="100%">
         </div>
       </div>
       <div class="column R">
