@@ -239,7 +239,7 @@ html, body {
   width: 120px;
   border-radius: 50%;
   border: 5px solid white;
-  background:no-repeat center/cover url(images/judy-pedersen.png);
+  background:no-repeat center/cover url(/images/judy-pedersen.png);
   position: absolute;
   top: -50%;
   left: 50%;
