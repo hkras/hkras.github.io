@@ -2,6 +2,9 @@ html {
   font-size: 16px;
   font-family: Verdana, Helvetica, monospace;
 }
+.index {
+  background-color: #ffffff;
+}
 html, body {
   overflow-x:hidden;
 }
@@ -66,11 +69,11 @@ html, body {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
-  /*Make the tooltip display above with an arrow point down*/
+  /* make the tooltip display above with an arrow pointing down */
 .tooltip .tooltiptext::after {
   content: " ";
   position: absolute;
-  top: 100%; /* At the bottom of the tooltip */
+  top: 100%; /* at the bottom of the tooltip */
   left: 50%;
   margin-left: -5px;
   border-width: 5px;
@@ -201,9 +204,110 @@ html, body {
   text-align: left;
   margin: 20px 0 0 0;
 }
+.testimonial-container {
+  background: #edeff0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+/*  margin-bottom: 5%; */
+}
+@media (max-width: 800px) {
+  .testimonial-container {
+    flex-direction: column;
+  }
+}
+.testimonial {
+  min-height: 400px;
+  width: 350px;
+  margin: 2%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0,0,0,.3);
+  display: flex;
+  flex-flow: column;
+  justify-content:space-between;
+}
+.testimonial-text {
+  padding: 2.2em;
+  line-height: 1.7em;
+  position: relative;
+  font-size: 18px;
+}
+.testimonial-image01 {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 5px solid white;
+  background:no-repeat center/cover url(images/judy-pedersen.png);
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.testimonial-image02 {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 5px solid white;
+  background:no-repeat center/cover url(images/sameer-seddiq.png);
+  filter: grayscale(100%);
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.testimonial-image03 {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 5px solid white;
+  background:no-repeat center/cover url(images/kristan-hinders.png);
+  filter: grayscale(100%);
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.testimonial-footer {
+  background: linear-gradient(90deg, #3c345c 0%, #920075 100%);
+  height: 140px;
+  border-radius: 0 0 10px 10px;
+  position: relative;
+}
+.quote {
+  font-size: 400%;
+  float: right;
+  opacity: 0.1;
+  transform: rotate(10deg) translate(-10px, -40px);
+  color: #4D3FA3;
+}
+.testimonial-attribution {
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  font-size: 0.9em;
+  text-align: center;
+}
+.testimonial-attribution h4 {
+  margin-top: -15px;
+  font-size: 0.8em;
+}
 .strengthsTitles {
   color: #920075;
   cursor: pointer;
+  width: 100%;
 }
 #arrowOne, #arrowTwo, #arrowThree, #arrowFour, #arrowFive {
   border: solid #920075;
@@ -222,10 +326,10 @@ html, body {
 #strengths {
   display: block;
   margin: auto;
-  width: 50%;
+/*  width: 50%; */
   background-color: #b8aec8;
   padding: 15px 35px;
-  border-radius: 10px;
+/*   border-radius: 10px; */
 }
 #strengths ul {
   width: 95%;
@@ -267,22 +371,6 @@ html, body {
     width: 80%;
   }
 }
-/*@media (min-width: 768px) {
-  .strengths-desktop {
-    background-color: rgba(58, 153, 168, 0.8);
-    text-align: left;
-    display: flex;
-    flex-direction: row;
-    grid: repeat(3, max-content) / 20em auto 20em;
-  }
-  #strengths {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media (min-width: 500px) {
-
-}*/
 /* End About page */
 /* About Timeline */
 /* timeline line */
@@ -415,17 +503,17 @@ input[type=submit]:hover {
   margin-top: 50px;
   width: 100%;
   align-items: flex-start;
+  flex-direction: row;
 }
 .graphics-item {
   background-color: #b8aec8;
   padding: 1%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
   transition: 0.3s;
   width: 10%;
   border-radius: 5px;
   margin: 5px;
   flex-shrink: 1;
-  flex-direction: row;
 }
 .graphics-item img {
   border-radius: 5px;
@@ -434,39 +522,33 @@ input[type=submit]:hover {
 .graphics-item:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-/* GRAPHICS MODALS */
 .graphicsImage {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
-
-.graphicsImage:hover {opacity: 0.7;}
-
-/* The Modal (background) */
+.graphicsImage:hover {
+  opacity: 0.7;
+}
 .graphics-modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none; /* hidden by default */
+  position: fixed; /* stay in place */
+  z-index: 1; /* sit on top */
+  padding-top: 100px; /* location of the box */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* enable scroll if needed */
+  background-color: rgb(0,0,0); /* fallback color */
+  background-color: rgba(0,0,0,0.9); /* black w opacity */
 }
-
-/* Modal Content (Image) */
 .graphics-modal-content {
   margin: auto;
   display: block;
   width: 80%;
   max-width: 700px;
 }
-
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
 #graphicsCaption {
   margin: auto;
   display: block;
@@ -477,19 +559,15 @@ input[type=submit]:hover {
   padding: 10px 0;
   height: 150px;
 }
-
-/* Add Animation - Zoom in the Modal */
+/* animation */
 .graphics-modal-content, #graphics-caption {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
-
 @keyframes zoom {
   from {transform:scale(0)}
   to {transform:scale(1)}
 }
-
-/* The Close Button */
 .exit-button {
   position: absolute;
   top: 15px;
@@ -499,7 +577,6 @@ input[type=submit]:hover {
   font-weight: bold;
   transition: 0.3s;
 }
-
 .exit-button:hover,
 .exit-button:focus {
   color: #bab4b4;
@@ -511,5 +588,13 @@ input[type=submit]:hover {
 @media only screen and (max-width: 700px){
   .graphics-modal-content {
     width: 100%;
+  }
+  .graphics-flex {
+    flex-direction: row;
+    justify-content: stretch;
+  }
+  .graphics-item {
+    width: 40%;
+    padding: 2%;
   }
 }
