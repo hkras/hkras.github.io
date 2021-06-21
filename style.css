@@ -231,7 +231,7 @@ html, body {
   width: 120px;
   border-radius: 50%;
   border: 5px solid white;
-  background:no-repeat center/cover url(images/judy-pedersen.png);
+  background:no-repeat center/cover url(images/judy-pedersen.PNG);
   position: absolute;
   top: -50%;
   left: 50%;
@@ -245,7 +245,7 @@ html, body {
   width: 120px;
   border-radius: 50%;
   border: 5px solid white;
-  background:no-repeat center/cover url(images/sameer-seddiq.png);
+  background:no-repeat center/cover url(images/sameer-seddiq.PNG);
   filter: grayscale(100%);
   position: absolute;
   top: -50%;
@@ -260,7 +260,7 @@ html, body {
   width: 120px;
   border-radius: 50%;
   border: 5px solid white;
-  background:no-repeat center/cover url(images/kristan-hinders.png);
+  background:no-repeat center/cover url(images/kristan-hinders.PNG);
   filter: grayscale(100%);
   position: absolute;
   top: -50%;
