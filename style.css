@@ -129,12 +129,12 @@ html, body {
   flex-direction: column;
 }
 .rect-top {
-  background-image: url(images/writings-sm.png);
+  background-image: url(images/writings.png);
   color: #ffffff;
   background-position: center;
 }
 .rect-bottom {
-  background-image: url(images/codings-sm.png);
+  background-image: url(images/codings.png);
   color: #ffffff;
   background-position: center;
 }
@@ -204,14 +204,6 @@ html, body {
   text-align: left;
   margin: 20px 0 0 0;
 }
-.testimonial-container {
-  background: #edeff0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 2%;
-/*  margin-bottom: 5%; */
-}
 @media (max-width: 800px) {
   .testimonial-container {
     flex-direction: column;
@@ -226,7 +218,7 @@ html, body {
   box-shadow: 0 8px 30px rgba(0,0,0,.3);
   display: flex;
   flex-flow: column;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 .testimonial-text {
   padding: 2.2em;
@@ -239,7 +231,7 @@ html, body {
   width: 120px;
   border-radius: 50%;
   border: 5px solid white;
-  background:no-repeat center/cover url(images/judy-pedersen.PNG);
+  background:no-repeat center/cover url(images/judy-pedersen.png);
   position: absolute;
   top: -50%;
   left: 50%;
@@ -253,7 +245,7 @@ html, body {
   width: 120px;
   border-radius: 50%;
   border: 5px solid white;
-  background:no-repeat center/cover url(images/sameer-seddiq.PNG);
+  background:no-repeat center/cover url(images/sameer-seddiq.png);
   filter: grayscale(100%);
   position: absolute;
   top: -50%;
@@ -268,7 +260,7 @@ html, body {
   width: 120px;
   border-radius: 50%;
   border: 5px solid white;
-  background:no-repeat center/cover url(images/kristan-hinders.PNG);
+  background:no-repeat center/cover url(images/kristan-hinders.png);
   filter: grayscale(100%);
   position: absolute;
   top: -50%;
@@ -411,6 +403,86 @@ html, body {
   z-index: 1;
 }
 /* End About Timeline */
+/* RESUME PAGE */
+.resume h2 {
+  margin: 1% 0 0 2%;
+  color: #3c345c;
+}
+.resume h3 {
+  margin: 0 0 0 2%;
+  color: #3c345c;
+}
+.resume h5 {
+  margin: 0 0 1% 2%;
+  color: #920075;
+}
+.dates {
+  margin: 0.5% 0 1% 2%;
+  font-size: 0.8em;
+}
+.resume ul {
+  margin: 1% 2% 2% 2%;
+}
+.resume li {
+  margin: 5px;
+}
+.resume li a {
+  color: #009999 !important;
+  text-decoration: none;
+}
+.resume li a:hover {
+  color: #4f0140;
+  text-decoration: none;
+  font-weight: bold;
+}
+.honors-awards li {
+  list-style: none;
+  text-indent: -1.4em;
+}
+.honors-awards   li::before {
+  content: "\2B50  ";
+}
+.honors-awards p {
+  line-height: 50%;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  width: 96%;
+  margin: 3% 2% 2% 2%;
+  background-color: #b8aec8;
+  border-radius: 10px;
+  padding: 10px;
+}
+.skill-item {
+  flex: 20%;
+}
+.resume-section {
+  margin-top: 250px;
+}
+@media (max-width: 842px) {
+  .honors-awards p {
+    line-height: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .skill-item {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media (max-width: 622px) {
+  .resume-section {
+    margin-top: 330px;
+  }
+}
+@media (max-width: 600px) {
+  .skill-item {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/* END RESUME PAGE */
 .logo {
   display: block;
   margin-left: auto;
