@@ -21,6 +21,8 @@
     <section class="graphics-flex">
       <div class="graphics-item">
         <img class="graphicsImage" src="/images/graphics/clean-up-week.png" alt="Internal Clean Up Week Flyer" style="width:100%">
+        <div class="graphics-type">
+        </div>
         <div id="graphicsModal" class="graphics-modal">
           <span class="exit-button">&times;</span>
           <img class="graphics-modal-content" id="graphicsImg01">
@@ -86,7 +88,7 @@
         var modalImg = document.getElementById("graphicsImg01");
         var captionText = document.getElementById("graphicsCaption");
 
-        for(i=0;i< img.length;i++)
+        for(i = 0; i < img.length; i++)
         {
           img[i].onclick = function(){
             modal.style.display = "block";
