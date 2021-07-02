@@ -7,57 +7,11 @@
   <!--  <link rel="stylesheet" href="videos-style.css"> -->
     <title>HK Coding</title>
   </head>
-  <style>
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 30px;
-    grid-gap: 5px 22px;
-  }
-  .grid-item {
-    padding: 10px;
-    font-size: 30px;
-    text-align: center;
-    position: relative;
-    width: 100%;
-  }
-  .grid-item img {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgb(0, 0, 0, 0.7);
-  }
-  .grid-item:hover .overlay {
-    opacity: 1;
-  }
-  .centered-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%);
-    font-size: 18px;
-    font-weight: bolder;
-    color: white;
-    font-family: monospace;
-  }
-  </style>
+
   <body>
     <!-- Header -->
     <div class="banner">
-      <div class="home"><!--<a href="index.html"><img src="images/home.png" alt="home"></a>--><h1 class="home-title"><a href="index.html">HANNA KRAS</a></h1></div>
+      <div class="home"><h1 class="home-title"><a href="index.html">HANNA KRAS</a></h1></div>
     </div>
     <nav class="main-nav">
       <p><a href="resume.html">RESUME</a>
@@ -69,62 +23,25 @@
 
 
     <!-- GRID TIME! -->
-    <div class="grid-container">
-      <div class="grid-item">
-        <img src="./images/magic-eight-ball.jpg" alt="magic eight ball with purple vortex behind it">
-        <a href="/coding-projects/magic-eight-ball.html"><div class="overlay">
-          <div class="centered-text">Magic Eight Ball<br>HTML, CSS, JS</div>
+    <div class="codings-grid-container">
+      <div class="codings-grid-item">
+        <img src="/images/magic-eight-ball.jpg" alt="magic eight ball with purple vortex behind it">
+        <a href="/coding-projects/magic-eight-ball.html"><div class="codings-overlay">
+          <div class="codings-centered-text">Magic Eight Ball<br>HTML, CSS, JS</div>
         </div></a>
       </div>
-      <div class="grid-item">
-        <img src="./images/production-code-timeline.jpg" alt="c. 1930s video camera">
-        <a href="/coding-projects/production-code-timeline.html"><div class="overlay">
-          <div class="centered-text">Production Code Timeline<br>HTML, JSON, Knightlab CSS</div>
+      <div class="codings-grid-item">
+        <img src="/images/production-code-timeline.jpg" alt="c. 1930s video camera">
+        <a href="/coding-projects/production-code-timeline.html"><div class="codings-overlay">
+          <div class="codings-centered-text">Production Code Timeline<br>HTML, JSON, Knightlab CSS</div>
         </div></a>
       </div>
-      <div class="grid-item">
-        <img src="./images/measurement-systems-map.svg" alt=" ">
-        <a href="/coding-projects/temperature-conversion.html"><div class="overlay">
-          <div class="centered-text">Temperature Conversion<br>HTML, CSS, JS</div>
+      <div class="codings-grid-item">
+        <img src="/images/measurement-systems-map-sm.png" alt="map of measurements">
+        <a href="/coding-projects/temperature-conversion.html"><div class="codings-overlay">
+          <div class="codings-centered-text">Temperature Conversion<br>HTML, CSS, JS</div>
         </div>
       </div>
-<!--      <div class="grid-item">
-        <img src="/images/magic-eight-ball.jpg" alt="magic eight ball with purple vortex behind it">
-        <div class="overlay">
-          <div class="centered-text">Magic Eight Ball<br>HTML, CSS, JS</div>
-        </div>
-      </div>
-      <div class="grid-item">
-        <img src="/images/magic-eight-ball.jpg" alt="magic eight ball with purple vortex behind it">
-        <div class="overlay">
-          <div class="centered-text">Magic Eight Ball<br>HTML, CSS, JS</div>
-        </div>
-      </div>
-      <div class="grid-item">
-        <img src="/images/magic-eight-ball.jpg" alt="magic eight ball with purple vortex behind it">
-        <div class="overlay">
-          <div class="centered-text">Magic Eight Ball<br>HTML, CSS, JS</div>
-        </div>
-      </div>
-      <div class="grid-item">
-        <img src="/images/magic-eight-ball.jpg" alt="magic eight ball with purple vortex behind it">
-        <div class="overlay">
-          <div class="centered-text">Magic Eight Ball<br>HTML, CSS, JS</div>
-        </div>
-      </div>
-      <div class="grid-item">
-        <img src="/images/magic-eight-ball.jpg" alt="magic eight ball with purple vortex behind it">
-        <div class="overlay">
-          <div class="centered-text">Magic Eight Ball<br>HTML, CSS, JS</div>
-        </div>
-      </div>
-      <div class="grid-item">
-        <img src="/images/magic-eight-ball.jpg" alt="magic eight ball with purple vortex behind it">
-        <div class="overlay">
-          <div class="centered-text">Magic Eight Ball<br>HTML, CSS, JS</div>
-        </div>
-      </div>-->
     </div>
-
   </body>
 </html>
