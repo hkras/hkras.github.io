@@ -64,7 +64,7 @@
 
         </div>
         <div class="testimonial-attribution">
-          <h3>Sameer Seddiq</h3>
+          <h3>Sammer Seddiq</h3>
           <h4>Business Intelligence Developer (co-worker)</h4>
         </div>
     </div>
@@ -83,10 +83,8 @@
     </div>
   </div>
 </div>
-
-<section class="strengths-desktop">
   <div id="strengths">
-    <div onclick="dropMultipotentialite(); rotateArrow();">
+    <div class="strengths-text" onclick="dropMultipotentialite(); rotateArrow();">
       <h3 class="strengthsTitles">If you're into Multipotentiality or Specialism <i id="arrowOne" class="down"></i></h3>
       <div class="preference" id="dropDownMulti" style="display: none;">
         <div class="tooltip"><p>Hanna is a <span style="color: #920075;">multipotentialite</span><span class="definitions tooltiptext"><em>noun</em></br>an educational and psychological term referring to the ability and preference of a person, particularly one of strong intellectual or artistic curiosity, to excel in two or more different fields</span>.</p>
@@ -99,7 +97,7 @@
         </ul>
       </div>
     </div>
-    <div onclick="dropStrengths(); rotateArrowTwo();">
+    <div class="strengths-text" onclick="dropStrengths(); rotateArrowTwo();">
       <h3 class="strengthsTitles">If you're into Clifton Strengths <i id="arrowTwo" class="down"></i></h3>
       <div class="preference" id="dropStrengths" style="display: none;">
         <p>Hanna's strengths are:</p>
@@ -112,7 +110,7 @@
         </ul>
       </div>
     </div>
-    <div onclick="dropTypes(); rotateArrowThree();">
+    <div class="strengths-text" onclick="dropTypes(); rotateArrowThree();">
       <h3 class="strengthsTitles">If you're into Myers-Briggs Type Indicators <i id="arrowThree" class="down"></i></h3>
       <div class="preference" id="dropTypes" style="display: none;">
         <p>Hanna is an ENFJ:</p>
@@ -124,7 +122,7 @@
         </ul>
       </div>
     </div>
-    <div onclick="dropAstrology(); rotateArrowFour();">
+    <div class="strengths-text" onclick="dropAstrology(); rotateArrowFour();">
       <h3 class="strengthsTitles">If you're into Astrological Signs <i id="arrowFour" class="down"></i></h3>
       <div class="preference" id="dropAstrology" style="display: none;">
         <p>Hanna’s main astrological signs are:</p>
@@ -135,7 +133,7 @@
         </ul>
       </div>
     </div>
-    <div onclick="dropHouses(); rotateArrowFive();">
+    <div class="strengths-text" onclick="dropHouses(); rotateArrowFive();">
       <h3 class="strengthsTitles">If you're into Hogwarts Houses <i id="arrowFive" class="down"></i></h3>
       <div class="preference" id="dropHouses" style="display: none;">
         <p>Hanna’s house is:</p>
@@ -145,9 +143,7 @@
       </div>
     </div>
   </div>
-</div>
 
-<!--script to make the strengths dropdown and show more text-->
   <script>
   function dropMultipotentialite() {
     var x = document.getElementById("dropDownMulti");
