@@ -1,6 +1,13 @@
 html {
+  width: 100%;
   font-size: 16px;
   font-family: Verdana, Helvetica, monospace;
+}
+body, html
+{
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
 }
 h3 {
   margin: 5px;
@@ -12,9 +19,6 @@ h3+p {
 p {
   line-height: 25px;
   margin-left: 10px;
-}
-.home img {
-
 }
 .title {
   color: #3c345c;
@@ -52,6 +56,8 @@ a:active {
   color: #b8aec8;
 }
 
+/*slideshow/carousel stuff*/
+
 * {box-sizing:border-box}
 
 /* slideshow container */
@@ -61,7 +67,6 @@ a:active {
   background-color: #b8aec8;
   padding-top: 30px;
   padding-bottom: 10px;
-
 }
 .iframe-container {
   position: relative;
@@ -82,7 +87,6 @@ iframe {
   width: 100%;
   height: 100%;
 }
-
 
 /* hide vids by default */
 .mySlides {
@@ -135,7 +139,6 @@ iframe {
 .prev:hover, .next:hover {
   background-color: rgba(60,52,92,0.8);
 }
-
 
 /* dot indicators */
 .dot {
