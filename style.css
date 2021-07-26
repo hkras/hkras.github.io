@@ -3,6 +3,7 @@ html {
   font-size: 16px;
   font-family: Verdana, Helvetica, monospace;
 }
+/* make the damn thing stretch from side to side */
 body, html
 {
   width: 100%;
@@ -105,7 +106,7 @@ html, body {
   color: #6df1d8;
 }
 /* adds padding so the text links make images link as well */
-.rect-top a, .rect-bottom a {
+.sq-left a, .sq-right a, .rect-bottom a {
   display: block;
   padding-bottom: 300px;
 }
@@ -157,12 +158,24 @@ html, body {
 .feature-square a {
   margin-top: auto;
 }
-.rect-top {
+.sq-left {
   background-image: url(images/graphics-pattern.png);
+  background-size: 130%;
   color: #ffffff;
   display: flex;
   flex-direction: column;
   background-position: center;
+}
+.sq-right {
+  background-image: url(images/photos.png);
+/*  transform: scaleX(-1); don't want this img to flip horizontal anymore*/
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+}
+.sq-right h3, .sq-right p {
+/*  transform: scaleX(-1); don't need text to flip if img not flip */
 }
 .rect-bottom {
   background-image: url(images/codings.png);
@@ -174,7 +187,10 @@ html, body {
 .feature-square h3 {
   margin-top: auto;
 }
-.rect-top h3 {
+.sq-left h3 {
+  margin-top: auto;
+}
+.sq-right h3 {
   margin-top: auto;
 }
 .rect-bottom h3 {
@@ -182,19 +198,23 @@ html, body {
 }
 @media (min-width: 500px) {
   .home-hero {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .feature-square {
-    grid-column: 2;
+    grid-column: span 2;
     grid-row-start: 1;
     grid-row-end: span 2;
   }
-  .rect-top {
+  .sq-left {
     grid-column: 1;
     grid-row: 1;
   }
+  .sq-right {
+    grid-column: 2;
+    grid-row: 1;
+  }
   .rect-bottom {
-    grid-column: 1;
+    grid-column: span 2;
     grid-row: 2;
   }
 }
@@ -207,14 +227,17 @@ html, body {
   .feature-square a {
     margin-top: auto;
   }
-  .rect-top a {
+  .sq-left a {
+    margin-top: auto;
+  }
+  .sq-right a {
     margin-top: auto;
   }
   .rect-bottom a {
     margin-top: auto;
   }
   /* keeps text from moving - gets rid of padding for link */
-  .rect-top a, .rect-bottom a {
+  .sq-left a, .sq-right a, .rect-bottom a {
     display: block;
     padding-bottom: 0;
   }
@@ -275,6 +298,8 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
+/*  margin-top: 2%; */
+/*  margin-bottom: 5%; */
 }
 @media (max-width: 800px) {
   .testimonial-container {
@@ -467,6 +492,7 @@ html, body {
   background-color: black;
   width: 50%;
 }
+
 /* The circles on the timeline */
 .container::after {
   content: '';
@@ -752,6 +778,65 @@ input[type=submit]:hover {
     padding: 2%;
   }
 }
+/* GRAPHICS END */
+
+/* PHOTOS START */
+    .photos {
+      width: 100%;
+    }
+    .photos-container {
+      column-count: 3;
+      width: 100%;
+      margin: 25px;
+      column-gap: 5px;
+      column-fill: balance;
+    }
+    .photo-item {
+      background: linear-gradient(135deg, #6df1d8, #5da4a6, #d30cb8, #5c2c6d, #3c345c);
+      padding: 2% 2% 1.5% 2%;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+      border-radius: 5px;
+      margin: 5px;
+      width: 90%;
+      float: left;
+    }
+    .photo-item img {
+      border-radius: 5px;
+      object-fit: cover;
+    }
+    .photo-columns {
+      width: 100%;
+    }
+    .photo-columns > p {
+      width: 49%;
+      float: left;
+    }
+    .photo-text {
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    .photo-date {
+      color: #ffffff;
+      text-align: right;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    @media (max-width: 800px) {
+      .photos-container {
+        column-count: 2;
+        width: 90%;
+      }
+    }
+    @media (max-width: 500px) {
+      .photos-container {
+        column-count: 1;
+        width: 90%;
+      }
+    }
+/* PHOTOS END */
+
 /* CODINGS */
 .codings-grid-container {
   display: grid;
