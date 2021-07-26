@@ -9,6 +9,7 @@
   <link rel="shortcut icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
+  <button onclick="topFunction()" id="toTheTop" title="Scroll to the top">&#129053; TOP</button>
   <!-- Header -->
   <div class="banner">
     <h1 class="home-title"><a href="index.html">HANNA KRAS</a></h1>
@@ -226,6 +227,28 @@
       arrow.className = "down";
     }
   }
+    
+  /* scroll to top */
+  //get button
+  var topbutton = document.getElementById("toTheTop");
+
+  // show top button after user scrolls down 20px from top of document
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+      topbutton.style.display = "block";
+    } else {
+      topbutton.style.display = "none";
+    }
+  }
+
+  // scroll to the top on click
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  /* end scroll to top */
 
   </script>
 
