@@ -39,6 +39,10 @@ html, body {
 #toTheTop:hover {
   background-color: #5c2c6d;
 }
+#toTheTop img {
+  width: 20px;
+  margin-left: -4px;
+}
 /* end scroll to top */
 /* HEADER */
 #header {
