@@ -220,6 +220,11 @@ html, body {
 .rect-bottom h3 {
   margin-top: auto;
 }
+@media only screen and (max-height: 721px) {
+  .feature-square a {
+    margin-top: -70px;
+  }
+}
 @media (min-width: 500px) {
   .home-hero {
     grid-template-columns: 1fr 1fr 1fr 1fr;
