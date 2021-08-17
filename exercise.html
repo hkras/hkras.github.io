@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style media="screen">
+    h3 {
+      border: solid 1px #e5e5e5;
+      border-radius: 5px;
+      background-color: #f5f5f5;
+      padding: 5px 10px;
+      width: 50%;
+      cursor: pointer;
+      font-family: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+  </style>
+
+  <body>
+    <h3 class="panel-heading" onclick="toggle1()">Question 1</h3>
+    <p id="answer01" style="display: none;">This is answer 1...</p>
+    <h3 class="panel-heading" onclick="toggle2()">Question 2</h3>
+    <p id="answer02" style="display: none;">This is answer 2...</p>
+    <h3 class="panel-heading" onclick="toggle3()">Question 3</h3>
+    <p id="answer03" style="display: none;">This is answer 3...</p>
+    <h3 class="panel-heading" onclick="toggle4()">Question 4</h3>
+    <p id="answer04" style="display: none;">This is answer 4...</p>
+    <h3 class="panel-heading" onclick="toggle5()">Question 5</h3>
+    <p id="answer05" style="display: none;">This is answer 5...</p>
+    <h3 class="panel-heading" onclick="toggle6()">Question 6</h3>
+    <p id="answer06" style="display: none;">This is answer 6...</p>
+  </body>
+
+  <script type="text/javascript">
+    function toggle1() {
+      var x = document.getElementById("answer01");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    function toggle2() {
+      var x = document.getElementById("answer02");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    function toggle3() {
+      var x = document.getElementById("answer03");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    function toggle4() {
+      var x = document.getElementById("answer04");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    function toggle5() {
+      var x = document.getElementById("answer05");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    function toggle6() {
+      var x = document.getElementById("answer06");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+    /* INSERT HEADER ABOVE FAQ DROPDOWNS */
+
+
+    var FAQ = document.querySelectorAll(".panel-heading")[0];
+
+    var setOne = document.createElement("h1");
+
+    var setOneText = document.createTextNode("Set 1");
+
+    setOne.prepend(setOneText);
+    FAQ.prepend(setOne);
+
+
+    var FAQ = document.querySelectorAll(".panel-heading")[2];
+
+    var setTwo = document.createElement("h1");
+
+    var setTwoText = document.createTextNode("Set 2");
+
+    setTwo.prepend(setTwoText);
+    FAQ.prepend(setTwo);
+
+
+    var FAQ = document.querySelectorAll(".panel-heading")[4];
+
+    var setThree = document.createElement("h1");
+
+    var setThreeText = document.createTextNode("Set 3");
+
+    setThree.prepend(setThreeText);
+    FAQ.prepend(setThree);
+
+
+  </script>
+
+
+</html>
