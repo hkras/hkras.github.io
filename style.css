@@ -137,7 +137,7 @@ html, body {
 /* adds padding so the text links make images link as well */
 .feature-square a {
   display: block;
-  padding-top: 500px;
+  padding-top: 400px;
 }
 .hero-wrapper {
   width: 100%;
