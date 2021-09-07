@@ -6,9 +6,9 @@
     <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript">
-      var input = document.getElementById("userQuestion");
+      document.getElementById("userQuestion");
       // Execute a function when the user releases a key on the keyboard
-      input.addEventListener("keyup", function(event) {
+      addEventListener("keyup", function(event) {
         // Number 13 is the "Enter" key on the keyboard
         if (event.keyCode === 13) {
           // Trigger the button element with a click
@@ -29,12 +29,18 @@
         text-align: center;
         font-family: Helvetica, monospace;
         padding: 20px 20px 10px 20px;
+        font-size: 4em;
+      }
+      h1 a {
+        text-decoration: none;
+        color: #3c345c;
       }
       h3 {
         text-align: center;
         font-family: Helvetica, monospace;
         padding-bottom: 5px;
         color: black;
+        font-size: 1.2em;
       }
       input {
         margin-left: auto;
@@ -47,7 +53,7 @@
         background-color: white;
         color: #ba12d9;
         font-weight: bold;
-        font-size: 16px;
+        font-size: 1em;
         outline: none;
       }
       input[type=text]:focus {
@@ -78,7 +84,7 @@
     </style>
   </head>
   <body>
-    <h1><a href="/coding-projects/magic-eight-ball">Magic Eight Ball</a></h1>
+    <h1><a href="/coding-projects/magic-eight-ball.html">Magic Eight Ball</a></h1>
         <h3>Do you have a question for the Magic Eight Ball?</h3>
         <form class="userForm" action="#" autocomplete="off">
           <label for="userQuestion"></label>
@@ -153,14 +159,20 @@
         ctx.fill();
       }
     }
-     
-  //write text
+
+
+
+
+
+      //magic eight ball answers
+
+
+      //write text
     function drawWords() {
       var userQuestionInput = document.getElementById("userQuestion");
       var displaySetting = userQuestionInput.style.display;
       var submitButton = document.getElementById("submit")
-      
-  //magic eight ball answers
+
       if (displaySetting=="block") {
         const randomNumber = Math.floor(Math.random() * 8);
 
@@ -239,6 +251,7 @@
       }
 
     }
+
     </script>
 
   </body>
