@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <button onclick="topFunction()" id="toTheTop" title="Scroll to the top"><img src="images/arrow.png">TOP</button>
@@ -276,27 +277,7 @@
       </div>
     </section>
     
-    <script>
-      //get button
-      var topbutton = document.getElementById("toTheTop");
-
-      // show top button after user scrolls down 20px from top of document
-      window.onscroll = function() {scrollFunction()};
-
-      function scrollFunction() {
-        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-          topbutton.style.display = "block";
-        } else {
-          topbutton.style.display = "none";
-        }
-      }
-
-      // scroll to the top on click
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-    </script>
+    <script src="/script.js"></script>
     
   </body>
 </html>
