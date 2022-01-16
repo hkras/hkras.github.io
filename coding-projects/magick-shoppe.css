@@ -1,0 +1,167 @@
+  #headerContainer {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+  }
+  #goHome {
+    width: 3em;
+    margin-left: -6px;
+  }
+  #magickHeader {
+    background: #364656;
+  }
+  #magickKitty {
+    float: right;
+    display: block;
+    width: 200px;
+    margin-top: -5em;
+  }
+  #magickTitle {
+    color: #eb48f6;
+    font-size: 7em;
+    margin-top: 0.3em;
+  }
+  #shoppingCartEmpty {
+    color: #ffffff;
+    float: right;
+    margin-top: -165px;
+    display: block;
+  }
+  #shoppingCartFull {
+    color: #ffffff;
+    float: right;
+    margin-top: -165px;
+    display: none;
+  }
+  #biteAst {
+    background: #14cfe0;
+    text-align: center;
+  }
+  #biteSpan {
+    background: #eb48f6;
+    text-align: center;
+  }
+  #shopIntro {
+    max-height: 390px;
+    overflow: hidden;
+    margin-left: -20px;
+    padding: 15px 15px 15px 25px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  #shopPhoto {
+    background-image:url(/images/magick-shoppe/magick-shoppe.png);
+    background-repeat: space;
+    background-size: 100%;
+    background-position: center;
+  }
+  .card {
+    margin: 20px 0px 20px 0px;
+  }
+  button {
+    float: right;
+    background-color: #4f10ad;
+    color: #ffffff;
+    border-radius: 4px;
+    border: none;
+    padding: 2px 8px 2px 8px;
+    transition: 0.3s;
+  }
+  button:hover {
+    background-color: #2a095d;
+    color: #ffffff;
+  }
+  footer {
+    background-color: #364656;
+    background-image:url(/images/magick-shoppe/magick-shoppe.png);
+    margin-bottom: 0px;
+    text-align: center;
+    padding: 20px;
+  }
+  footer p {
+    padding-top: 10px;
+  }
+  footer img {
+    border-radius: 50%;
+    border: 1px solid #2a095d;
+    margin-top: 20px;
+  }
+  .footer-content {
+    background-color: rgba(54, 70, 85, 0.8);
+    color: #ffffff;
+    overflow: hidden;
+    margin: -20px -10px -20px -20px;
+  }
+
+  /* shopping cart modal */
+  .close {
+    background-color: #ffffff;
+    color: rgba(42, 9, 93, 0.5);
+    font-size: 2em;
+  }
+  .close:hover {
+    color: #2a095d;
+    background-color: #ffffff;
+  }
+  /* end shopping cart modal*/
+  #cartNewt, #cartFrog, #cartBat, #cartCauldron {
+    color: #2a095d;
+    float: left;
+    font-weight: bold;
+  }
+  #priceNewt, #priceFrog, #priceBat, #priceCauldron {
+    color: #14cfe0;
+    float: right;
+    font-weight: bold;
+  }
+  @media only screen and (max-width: 600px) {
+    #headerContainer {
+      position: sticky;
+      top: 0;
+      z-index: 99;
+    }
+    #goHome {
+      width: 3em;
+      margin-left: -6px;
+    }
+    #magickHeader {
+      background: #364656;
+      margin-right: -60px;
+    }
+    #magickKitty {
+      float: none;
+      margin-left: 8em;
+      display: block;
+      width: 150px;
+      margin-top: -4em;
+    }
+    #magickTitle {
+      color: #eb48f6;
+      font-size: 3em;
+      margin-top: 0.1em;
+      text-align: center;
+    }
+    #shoppingCartEmpty {
+      margin-top: -225px;
+    }
+    #shoppingCartFull {
+      margin-top: -225px;
+    }
+    #shopIntro {
+      max-height: 500px;
+      overflow: hidden;
+      margin-left: -20px;
+      margin-right: -12px;
+      padding: 15px 15px 15px 25px;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+    #shopPhoto {
+      background-image:url(/images/magick-shoppe/magick-shoppe.png);
+      background-repeat: repeat-y;
+      margin-right: -25px;
+      background-size: 100%;
+      background-position: center;
+    }
+    .card {
+      margin: 20px -20px 20px 22px;
+    }
+  }
