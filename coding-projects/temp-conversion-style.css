@@ -2,6 +2,11 @@
     font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
     background-color: #FFFFFF;
   }
+  #goHome {
+    width: 3em;
+    margin-top: -20px;
+    margin-left: -10px;
+  }
   h1 {
     color: #FFFFFF;
     font-size: 4em;
