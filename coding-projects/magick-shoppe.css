@@ -164,4 +164,7 @@
     .card {
       margin: 20px -20px 20px 22px;
     }
+    footer {
+      width: 100%;
+    }
   }
