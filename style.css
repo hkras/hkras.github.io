@@ -552,6 +552,7 @@ html, body {
 .section {
   margin: 0 0 1% 2%;
   color: #920075;
+  font-weight: 600;
 }
 .dates {
   margin: 0.5% 0 1% 2%;
